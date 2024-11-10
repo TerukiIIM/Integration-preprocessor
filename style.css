@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f8f8f8;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  background: #FCEED5;
+}
+.nav__logo {
+  width: 150px;
+}
+.nav__links {
+  display: flex;
+  gap: 20px;
+}
+.nav__link-item {
+  margin: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.nav__search-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav__search {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.nav__search-input {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.nav__search-icon {
+  font-size: 1.2rem;
+}
+
+.header {
+  height: calc(100vh - 80px);
+  width: 100%;
+  background: #FCEED5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+}
+.header__text {
+  max-width: 50%;
+  text-align: left;
+  z-index: 1;
+}
+.header__image {
+  max-width: 50%;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+}
+.header__title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.header__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.header__description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.header__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 100px;
+}
+
+.pets__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.pets__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.pets__box {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.pets__box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.pets__name {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.pets__details {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+.pets__price {
+  font-size: 1.2rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #FCEED5;
+  border-radius: 20px;
+}
+.banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.banner__image {
+  width: 500px;
+}
+.banner__text {
+  max-width: 45%;
+  text-align: right;
+  padding-right: 7%;
+}
+.banner__title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.banner__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.banner__description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.banner__buttons {
+  justify-content: right;
+  display: flex;
+  gap: 10px;
+}
+
+.knowledge__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.knowledge__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.knowledge__box {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.knowledge__box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.knowledge__box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.knowledge__filter {
+  display: inline-block;
+  background-color: #00A7E7;
+  color: #FFFFFF;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.knowledge__box-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+.knowledge__description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #FCEED5;
+  padding: 25px 10%;
+  width: 100%;
+}
+.footer__register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding: 30px 0;
+  border-radius: 10px;
+  background: #003459;
+  width: 90%;
+}
+.footer__title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  width: 325px;
+  color: #FFFFFF;
+}
+.footer__subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  width: 65%;
+}
+.footer__input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+.footer__links, .footer__social-links {
+  display: flex;
+  list-style: none;
+}
+.footer__link-item, .footer__social-item {
+  margin: 0 15px;
+  font-size: 14px;
+  color: #003459;
+  cursor: pointer;
+}
+.footer__social-item i {
+  font-size: 20px;
+}
+.footer__divider {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #003459;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+.footer__copy {
+  font-size: 14px;
+  color: #003459;
+}
+.footer__logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.footer__terms, .footer__privacy {
+  font-size: 14px;
+  color: #003459;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.footer__terms:hover, .footer__privacy:hover {
+  text-decoration: underline;
+}
+
+.button {
+  border-radius: 30px;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button--primary {
+  background: #003459;
+  border: 2px solid #003459;
+  padding: 15px 30px;
+  font-size: medium;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.button--secondary {
+  background: transparent;
+  border: 2px solid #003459;
+  padding: 15px 30px;
+  font-size: medium;
+  cursor: pointer;
+  color: #003459;
+}
+.button:hover {
+  background: #003459;
+  color: #FFFFFF;
+}
+.button:focus {
+  outline: 3px solid #003459;
+  outline-offset: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
