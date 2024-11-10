@@ -19,9 +19,7 @@ body {
 
 // Navigation (Header)
 .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(row, space-around, center);
     width: 100%;
     padding: 0 20px;
     background: $primary-color;
@@ -31,8 +29,7 @@ body {
     }
 
     &__links {
-        display: flex;
-        gap: 20px;
+        @include flex(row, center, center, 20px);
     }
 
     &__link-item {
@@ -43,14 +40,11 @@ body {
     }
 
     &__search-container {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+        @include flex(row, center, center, 20px);
     }
 
     &__search {
-        display: flex;
-        align-items: center;
+        @include flex(row, center);
         background: white;
         padding: 10px 20px;
         @include border-radius($border-radius-large);
@@ -70,19 +64,15 @@ body {
 
 // Header Section
 .header {
+    @include flex(row, center, center);
     height: calc(100vh - 80px);
     width: 100%;
     background: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
 
     &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between, center);
         width: 80%;
         max-width: 1200px;
         height: 100%;
@@ -117,8 +107,7 @@ body {
     }
 
     &__buttons {
-        display: flex;
-        gap: 10px;
+        @include flex(row, center, center, 10px);
     }
 }
 
@@ -178,17 +167,13 @@ body {
 
 // Banner Section
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     width: 100%;
     background: $primary-color;
     @include border-radius($border-radius-medium);
 
     &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex(space-between, center);
         height: 100%;
     }
 
@@ -218,9 +203,7 @@ body {
     }
 
     &__buttons {
-        justify-content: right;
-        display: flex;
-        gap: 10px;
+        @include flex(row, right, center, 10px);
     }
 }
 
@@ -296,9 +279,7 @@ body {
     width: 100%;
 
     &__register {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center);
         margin: 50px auto;
         padding: 30px 0;
         @include border-radius(10px);
@@ -315,9 +296,7 @@ body {
     }
 
     &__subscribe {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex(row, space-between, center);
         padding: 10px;
         @include border-radius($border-radius);
         background: white;
@@ -333,16 +312,14 @@ body {
     }
 
     &__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(row, space-between, center);
         margin: auto;
         width: 90%;
     }
 
     &__links,
     &__social-links {
-        display: flex;
+        @include flex(row);
         list-style: none;
     }
 
@@ -365,9 +342,7 @@ body {
     }
 
     &__content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(row, space-around, center);
         max-width: 1200px;
         margin: 0 auto;
         width: 90%;
